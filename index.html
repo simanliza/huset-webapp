@@ -15,7 +15,7 @@
             <div class="centeredBody">
                 <div class="content">
                     <div class="navBurger">
-                        <a href="#"><span class="invertColor">&#9776;</span></a>
+                        <a href="#" onclick="openNav()"><span class="invertColor">&#9776;</span></a>
                     </div>
                     <div class="logo">
                         <a href="#"><img src="images/logo.png" alt="Logo"/></a>
@@ -27,26 +27,35 @@
         <main class="pageContent">
 
             <section class="pageNavigation">
-                <div class="favNav">
-                    <nav>
-                        <a href="#">Music</a>
-                        <a href="#">Speech</a>
-                    </nav>
+                <div class="closePageNavigation align-right">
+                    <span class="cursor-pointer invertColor" href="#" onclick="closeNav()">&times;</span>
                 </div>
 
-                <div class="catNav">
-                    <nav>
-                        <a href="#">Music</a>
-                        <a href="#">Movie</a>
-                        <a href="#">Speech</a>
-                    </nav>
+                <div class="navBox">
+                    <div class="favNav">
+                        <nav>
+                            <a class="invertColor bold" href="#">Favorite Events</a>
+                            <a href="#">Music</a>
+                            <a href="#">Speech</a>
+                        </nav>
+                    </div>
+
+                    <div class="catNav">
+                        <nav>
+                            <a class="invertColor bold" href="#">All Events</a>
+                            <a href="#">Music</a>
+                            <a href="#">Movie</a>
+                            <a href="#">Speech</a>
+                        </nav>
+                    </div>
+
+                    <div class="relNav hidden">
+                        <nav>
+
+                        </nav>
+                    </div>
                 </div>
 
-                <div class="relNav">
-                    <nav>
-
-                    </nav>
-                </div>
             </section>
 
             <header class="mainHeader centeredBody">
@@ -154,7 +163,7 @@
         </main>
 
         <footer class="pageFooter">
-
+            <h5 class="center">&copy; Student of Kea. All right reserves.</h5>
         </footer>
 
 
@@ -174,5 +183,8 @@
         </template>
 
         <script src="scripts/script.js"></script>
+        <script src="scripts/loader.js"></script>
+        <script src="scripts/navigation.js"></script>
+
     </body>
 </html>

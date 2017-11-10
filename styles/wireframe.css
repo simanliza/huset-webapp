@@ -1,10 +1,22 @@
 *{box-sizing: border-box; margin: 0;}
 
+:root{
+    --topBar_height: 60px;
+}
 
-.pageHeader{height: 60px;}
+
+.pageHeader{height: var(--topBar_height);}
 .pageHeader .content{display: flex; flex-wrap: nowrap;}
 .pageHeader .navBurger{font-size: 2em; line-height: 40px; padding: 10px;}
 .pageHeader .logo img{max-width: 100px;}
 
 .eventList{display: flex; flex-wrap: wrap;}
 .eventList .eventListItem{width: 32.5%; margin: 0.4%; padding: 1.5em;}
+
+
+.pageNavigation{height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; overflow-x: hidden; transition: 0.5s; opacity: 0.98;}
+.pageNavigation .navBox{padding: 1em;}
+.pageNavigation .closePageNavigation span{font-size: 3.5em; line-height: 40px; padding: 10px;}
+
+nav{padding: 1em;}
+nav a{display: block; padding: 0.25em; border-bottom: 1px solid #505050;}

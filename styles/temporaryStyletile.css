@@ -33,7 +33,6 @@ a{font: var(--font_a); color: var(--highlight); text-decoration: none;}
 a:hover{color: var(--darkHighlight);}
 ul, li, ol{list-style: none; margin: 0; padding: 0;}
 li{margin: 0.75em 0;}
-nav{border-bottom: 1px solid var(--bg);}
 nav a{font: var(--font_nava); color: var(--highlight);}
 nav a:active, nav a:hover{font: var(--font_nava); color: (--highlight2);}
 img{width: 100%;}
@@ -42,7 +41,6 @@ img{width: 100%;}
 
 .invertColor{color: var(--txtInvertColor) !important;}
 .pageHeader{background: var(--highlight);}
-.pageFooter{border-top: 1px solid var(--txtColor);}
 .btn.primary{background: var(--highlight); color: var(--txtInvertColor);}
 .btn.secondary{background: var(--highlight2); color: var(--txtInvertColor);}
 .eventListItem img{border: 1px solid #DEDEDE;}
@@ -50,7 +48,6 @@ img{width: 100%;}
 box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.06); margin: 1em 0; padding: 0.5em;}
 .eventListItem:hover{-webkit-box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.15);
 box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.15); margin: 1em 0; padding: 0.5em;}
-.pageNavigation{background: var(--txtColor);}
 
 /* change this to change social icon possible and hover color i.e. 'var(--txtColor)','var(--highlight)'*/
 .socialIcon{color: var(--txtColor);}
