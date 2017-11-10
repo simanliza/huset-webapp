@@ -11,8 +11,10 @@
 .pageHeader .logo img{max-width: 100px;}
 
 .eventList{display: flex; flex-wrap: wrap;}
-.eventList .dDescription{max-height: 24.75em; overflow: hidden;}
+.homePage .eventList .dDescription{max-height: 24.75em; overflow: hidden;}
 .eventList .dCategories{font-style: italic;}
+.eventDetails{padding: 2%;}
+.eventDetails article{padding: 2%;}
 
 .pageNavigation{height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; overflow-x: hidden; transition: 0.5s; opacity: 0.98;}
 .pageNavigation .navBox{padding: 1em;}

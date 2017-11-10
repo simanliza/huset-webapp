@@ -11,16 +11,16 @@
         <link rel="stylesheet" href="styles/style.css"/>
 
     </head>
-    <body>
+    <body class="homePage">
 
         <header class="pageHeader">
             <div class="centeredBody">
                 <div class="content">
                     <div class="navBurger">
-                        <a href="#" onclick="openNav()"><span class="invertColor">&#9776;</span></a>
+                        <a onclick="openNav()"><span class="invertColor">&#9776;</span></a>
                     </div>
                     <div class="logo">
-                        <a href="#"><img src="images/logo.png" alt="Logo"/></a>
+                        <a href=""><img src="images/logo.png" alt="Logo"/></a>
                     </div>
                 </div>
             </div>
@@ -35,33 +35,36 @@
                 <div class="navBox">
                     <div class="favNav">
                         <nav>
-                            <a class="invertColor bold" href="#" data-cat="favorite-categories" onclick="getEventsByDefault()">Favorite Events</a>
-                            <a href="#" data-cat="4" onclick="getEventsByCategory('4')">Movie</a>
-                            <a href="#" data-cat="3" onclick="getEventsByCategory('3')">Music</a>
+                            <a class="invertColor bold" data-cat="favorite-categories" onclick="getEventsByDefault()">Favorite Events</a>
+                            <a data-cat="4" onclick="getEventsByCategory('3')">Music</a>
                         </nav>
                     </div>
 
                     <div class="catNav">
                         <nav>
-                            <a class="invertColor bold" href="#" data-cat="all-categories" onclick="getEventsAll()">All Events</a>
+                            <a class="invertColor bold" data-cat="all-categories" onclick="getEventsAll()">All Events</a>
                         </nav>
                     </div>
                 </div>
             </section>
 
-            <header class="mainHeader centeredBody">
-                <h1 class="center">Events at Huset House</h1>
-            </header>
+            <section class="listSection">
 
-            <section class="eventList centeredBody"></section>
+                <header class="mainHeader centeredBody">
+                    <h1 class="center">Events at Huset House</h1>
+                </header>
 
-            <section class="loadMoreOption centeredBody">
+                <section class="eventList centeredBody"></section>
 
-                <hr/>
+            </section>
 
-                <div class="loadMoreEventOption center">
-                    <button class="btn primary cursor-pointer">Load More</button>
-                </div>
+            <section class="eventSection hide">
+
+                <header class="mainHeader centeredBody">
+                    <h1 class="center">Events at Huset House</h1>
+                </header>
+
+                <section class="eventDetails centeredBody"></section>
 
             </section>
 
@@ -88,7 +91,25 @@
                             <li>Social Sharing: <span class="dSocialLink"></span></li>
                             <li>Price: <span class="price"><span class="dPrice">112</span> DKK</span> / <a href="" class="btn btn-sm secondary dBookNow">Book Now</a><span class="price dPresale">Presale Unavailable</span></li>
                             <li><hr/></li>
-                            <li class="center"><a href="" class="btn btn-sm primary dEventPage">Read More</a></li>
+                            <li class="center"><a class="btn btn-sm primary dDetails">Read More</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </template>
+
+        <template id="eventDetailsTemplate">
+            <article class="eventDetailsItem">
+                <div class="content">
+                    <div class="eventHeader">
+                        <h5 class="center underline txtCapitalize dTitle">Event Title</h5>
+                    </div>
+                    <div class="eventInfo">
+                        <p class="align-justify dDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <ul>
+                            <li class="dCategories">Music / Jazz Music</li>
+                            <li>Social Sharing: <span class="dSocialLink"></span></li>
+                            <li>Price: <span class="price"><span class="dPrice">112</span> DKK</span> / <a href="" class="btn btn-sm secondary dBookNow">Book Now</a><span class="price dPresale">Presale Unavailable</span></li>
                         </ul>
                     </div>
                 </div>

@@ -29,7 +29,7 @@ h4{font: var(--font_h4); margin: 0.75em 0;}
 h5{font: var(--font_h5); margin: 0.75em 0;}
 h6{font: var(--font_h6); margin: 0.75em 0;}
 p{font: var(--font_p); margin: 0.75em 0;}
-a{font: var(--font_a); color: var(--highlight); text-decoration: none;}
+a{font: var(--font_a); color: var(--highlight); text-decoration: none; cursor: pointer;}
 a:hover{color: var(--darkHighlight);}
 ul, li, ol{font: var(--font_p); list-style: none; margin: 0; padding: 0;}
 li{margin: 0.75em 0;}
