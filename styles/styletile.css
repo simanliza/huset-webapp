@@ -10,7 +10,7 @@
     --font_h6: 400 1.1em 'Raleway', sans-serif;
     --font_p: 400 1.1em 'PT Sans', sans-serif;
     --font_a: 400 1.1em 'PT Sans', sans-serif;
-    --font_nava: 400 1.1em 'Ubuntu', sans-serif;
+    --font_nava: 400 1.5em 'Ubuntu', sans-serif;
 
     --bg: #ffffff; /* offWhite */
     --highlight: #5e5e5e; /* green */
@@ -31,7 +31,7 @@ h6{font: var(--font_h6); margin: 0.75em 0;}
 p{font: var(--font_p); margin: 0.75em 0;}
 a{font: var(--font_a); color: var(--highlight); text-decoration: none;}
 a:hover{color: var(--darkHighlight);}
-ul, li, ol{list-style: none; margin: 0; padding: 0;}
+ul, li, ol{font: var(--font_p); list-style: none; margin: 0; padding: 0;}
 li{margin: 0.75em 0;}
 nav{border-bottom: 1px solid var(--bg);}
 nav a{font: var(--font_nava); color: var(--highlight);}
@@ -39,7 +39,7 @@ nav a:active, nav a:hover{font: var(--font_nava); color: (--highlight2);}
 img{width: 100%;}
 
 
-
+.price{color: var(--highlight2);}
 .invertColor{color: var(--txtInvertColor) !important;}
 .pageHeader{background: var(--highlight);}
 .pageFooter{border-top: 1px solid var(--txtColor);}
@@ -52,6 +52,7 @@ box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.06); margin: 1em 0; padding: 0.5em;}
 box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.15); margin: 1em 0; padding: 0.5em;}
 .pageNavigation{background: var(--txtColor);}
 
+
 /* change this to change social icon possible and hover color i.e. 'var(--txtColor)','var(--highlight)'*/
-.socialIcon{color: var(--txtColor);}
+.socialIcon{color: var(--txtColor); display: inline-block; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--txtColor); padding: 0.42em 0.42em; margin: 0em 0.1em; font-size: 1.3em; cursor: pointer;}
 .socialIcon:hover{color: var(--highlight2);}

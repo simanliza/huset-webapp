@@ -5,6 +5,7 @@
 .underline{text-decoration: underline;}
 .bold, .bold:hover{font-weight: bold;}
 .hidden{display: none;}
+.txtCapitalize{text-transform: capitalize;}
 .btn {
     display: inline-block;
     font-weight: 400;

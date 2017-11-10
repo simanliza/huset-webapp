@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Huset Webapp</title>
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/826a7e3dce.css" media="all">
+
         <link rel="stylesheet" href="styles/styletile.css"/>
         <link rel="stylesheet" href="styles/wireframe.css"/>
         <link rel="stylesheet" href="styles/style.css"/>
@@ -30,125 +32,28 @@
                 <div class="closePageNavigation align-right">
                     <span class="cursor-pointer invertColor" href="#" onclick="closeNav()">&times;</span>
                 </div>
-
                 <div class="navBox">
                     <div class="favNav">
                         <nav>
-                            <a class="invertColor bold" href="#">Favorite Events</a>
-                            <a href="#">Music</a>
-                            <a href="#">Speech</a>
+                            <a class="invertColor bold" href="#" data-cat="favorite-categories" onclick="getEventsByDefault()">Favorite Events</a>
+                            <a href="#" data-cat="4" onclick="getEventsByCategory('4')">Movie</a>
+                            <a href="#" data-cat="3" onclick="getEventsByCategory('3')">Music</a>
                         </nav>
                     </div>
 
                     <div class="catNav">
                         <nav>
-                            <a class="invertColor bold" href="#">All Events</a>
-                            <a href="#">Music</a>
-                            <a href="#">Movie</a>
-                            <a href="#">Speech</a>
-                        </nav>
-                    </div>
-
-                    <div class="relNav hidden">
-                        <nav>
-
+                            <a class="invertColor bold" href="#" data-cat="all-categories" onclick="getEventsAll()">All Events</a>
                         </nav>
                     </div>
                 </div>
-
             </section>
 
             <header class="mainHeader centeredBody">
                 <h1 class="center">Events at Huset House</h1>
             </header>
 
-            <section class="eventList centeredBody">
-
-                <article class="eventListItem">
-                    <div class="content">
-                        <div class="eventHeader">
-                            <h2 class="center underline">A Nice Event</h2>
-                        </div>
-                        <div class="eventImage">
-                            <img src="images/logo.png" alt="Event Img"/>
-                        </div>
-                        <div class="eventInfo">
-                            <p class="align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                            <ul>
-                                <li>Music / Jazz Music</li>
-                                <li>Social Sharing: </li>
-                                <li>Price: <span class="dPrice">112</span> DKK / <a href="" class="btn btn-sm secondary">Book Now</a></li>
-                                <li><hr/></li>
-                                <li class="center"><a href="" class="btn btn-sm primary">Read More</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="eventListItem">
-                    <div class="content">
-                        <div class="eventHeader">
-                            <h2 class="center underline">A Nice Event</h2>
-                        </div>
-                        <div class="eventImage">
-                            <img src="images/logo.png" alt="Event Img"/>
-                        </div>
-                        <div class="eventInfo">
-                            <p class="align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                            <ul>
-                                <li>Music / Jazz Music</li>
-                                <li>Social Sharing: </li>
-                                <li>Price: <span class="dPrice">112</span> DKK / <a href="" class="btn btn-sm secondary">Book Now</a></li>
-                                <li><hr/></li>
-                                <li class="center"><a href="" class="btn btn-sm primary">Read More</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="eventListItem">
-                    <div class="content">
-                        <div class="eventHeader">
-                            <h2 class="center underline">A Nice Event</h2>
-                        </div>
-                        <div class="eventImage">
-                            <img src="images/logo.png" alt="Event Img"/>
-                        </div>
-                        <div class="eventInfo">
-                            <p class="align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                            <ul>
-                                <li>Music / Jazz Music</li>
-                                <li>Social Sharing: </li>
-                                <li>Price: <span class="dPrice">112</span> DKK / <a href="" class="btn btn-sm secondary">Book Now</a></li>
-                                <li><hr/></li>
-                                <li class="center"><a href="" class="btn btn-sm primary">Read More</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="eventListItem">
-                    <div class="content">
-                        <div class="eventHeader">
-                            <h2 class="center underline">A Nice Event</h2>
-                        </div>
-                        <div class="eventImage">
-                            <img src="images/logo.png" alt="Event Img"/>
-                        </div>
-                        <div class="eventInfo">
-                            <p class="align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                            <ul>
-                                <li>Music / Jazz Music</li>
-                                <li>Social Sharing: </li>
-                                <li>Price: <span class="dPrice">112</span> DKK / <a href="" class="btn btn-sm secondary">Book Now</a></li>
-                                <li><hr/></li>
-                                <li class="center"><a href="" class="btn btn-sm primary">Read More</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-            </section>
+            <section class="eventList centeredBody"></section>
 
             <section class="loadMoreOption centeredBody">
 
@@ -166,25 +71,35 @@
             <h5 class="center">&copy; Student of Kea. All right reserves.</h5>
         </footer>
 
+        <template id="navLinkTemplate">
+            <a href="#" data-cat="category-slug" onclick="getEventsByCategory('category-slug')">Category Name</a>
+        </template>
 
-        <section id="list">
-
-
-
-        </section>
-
-        <template id="bookTemplate">
-            <article class="book">
-                <a class="bookLink content" href=""><h1></h1></a>
-                <div class="excerpt content"></div>
-                <div class="image"><img src="" alt=""></div>
-                <p class="price content">$<span></span></p>
+        <template id="eventItemTemplate">
+            <article class="eventListItem">
+                <div class="content">
+                    <div class="eventHeader">
+                        <h5 class="center underline txtCapitalize dTitle">Event Title</h5>
+                    </div>
+                    <div class="eventInfo">
+                        <p class="align-justify dDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <ul>
+                            <li class="dCategories">Music / Jazz Music</li>
+                            <li>Social Sharing: <span class="dSocialLink"></span></li>
+                            <li>Price: <span class="price"><span class="dPrice">112</span> DKK</span> / <a href="" class="btn btn-sm secondary dBookNow">Book Now</a><span class="price dPresale">Presale Unavailable</span></li>
+                            <li><hr/></li>
+                            <li class="center"><a href="" class="btn btn-sm primary dEventPage">Read More</a></li>
+                        </ul>
+                    </div>
+                </div>
             </article>
         </template>
 
         <script src="scripts/script.js"></script>
         <script src="scripts/loader.js"></script>
         <script src="scripts/navigation.js"></script>
+
+        <script src="https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js"></script>
 
     </body>
 </html>
