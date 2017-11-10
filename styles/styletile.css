@@ -12,11 +12,11 @@
     --font_a: 400 1.1em 'PT Sans', sans-serif;
     --font_nava: 400 1.1em 'Ubuntu', sans-serif;
 
-    --bg: #efede0; /* offWhite */
-    --highlight: #11a587; /* green */
-    --highlight2:  #df6244; /* red */
-    --darkHighlight: #0d715b; /* darkGreen */
-    --txtColor: #444444; /* pencilBlack */
+    --bg: #ffffff; /* offWhite */
+    --highlight: #5e5e5e; /* green */
+    --highlight2:  #71878e; /* red */
+    --darkHighlight: #d6d6d6; /* darkGreen */
+    --txtColor: #212121; /* pencilBlack */
     --txtInvertColor: #ffffff; /* white */
 }
 
@@ -50,5 +50,5 @@ box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.06); margin: 1em 0; padding: 0.5em;}
 box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.15); margin: 1em 0; padding: 0.5em;}
 
 /* change this to change social icon possible and hover color i.e. 'var(--txtColor)','var(--highlight)'*/
-.socialIcon{color: var(--highlight);}
+.socialIcon{color: var(--txtColor);}
 .socialIcon:hover{color: var(--highlight2);}
