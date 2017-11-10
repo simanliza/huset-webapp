@@ -30,7 +30,7 @@ function getCategoriesByPost(postID){
 }
 function getEventsAll(){
     let eventsUrl = "https://studkea.jprkopat.com/semester_2/theme0701/exercise/huset-kbh/wp-json/wp/v2/events?per_page=100&";
-    fetch(catEventUrl).then(res=>res.json()).then(showEvents);
+    fetch(eventsUrl).then(res=>res.json()).then(showEvents);
 }
 function getEventsByDefault(){
     getEventsByCategory(favoriteCategories.join(","));
