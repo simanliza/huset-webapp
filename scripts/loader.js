@@ -20,11 +20,11 @@ let eventItemTemplate = document.querySelector("#eventItemTemplate").content;
 
 
 function getCategories(){
-    let catUrl = "http://studkea.jprkopat.com/semester_2/theme0701/exercise/huset-kbh/wp-json/wp/v2/categories/?per_page=100&embed";
+    let catUrl = "https://studkea.jprkopat.com/semester_2/theme0701/exercise/huset-kbh/wp-json/wp/v2/categories/?per_page=100&embed";
     fetch(catUrl).then(res=>res.json()).then(showCategoires);
 }
 function getCategoriesByPost(postID){
-    let catUrl = "http://studkea.jprkopat.com/semester_2/theme0701/exercise/huset-kbh/wp-json/wp/v2/categories?post="+postID+"&embed";
+    let catUrl = "https://studkea.jprkopat.com/semester_2/theme0701/exercise/huset-kbh/wp-json/wp/v2/categories?post="+postID+"&embed";
     fetch(catUrl).then(res=>res.json()).then(savePostCategoires);
 }
 function getEventsAll(){
@@ -34,7 +34,7 @@ function getEventsByDefault(){
     getEventsByCategory(favoriteCategories.join(","));
 }
 function getEventsByCategory(catID){
-    let catEventUrl = "http://studkea.jprkopat.com/semester_2/theme0701/exercise/huset-kbh/wp-json/wp/v2/events?per_page=100&categories="+catID+"&";
+    let catEventUrl = "https://studkea.jprkopat.com/semester_2/theme0701/exercise/huset-kbh/wp-json/wp/v2/events?per_page=100&categories="+catID+"&";
     fetch(catEventUrl).then(res=>res.json()).then(showEvents);
 }
 function getEventsById(id){
