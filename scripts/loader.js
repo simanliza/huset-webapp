@@ -1,5 +1,6 @@
 let favoriteCategories = new Array();
 favoriteCategories.push(3);
+favoriteCategories.push(5);
 let categories;
 let nCategories;
 
@@ -28,7 +29,8 @@ function getCategoriesByPost(postID){
     fetch(catUrl).then(res=>res.json()).then(savePostCategoires);
 }
 function getEventsAll(){
-
+    let eventsUrl = "https://studkea.jprkopat.com/semester_2/theme0701/exercise/huset-kbh/wp-json/wp/v2/events?per_page=100&";
+    fetch(catEventUrl).then(res=>res.json()).then(showEvents);
 }
 function getEventsByDefault(){
     getEventsByCategory(favoriteCategories.join(","));
