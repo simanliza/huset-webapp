@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Raleway:400,500|Ubuntu:400');
+
+:root{
+    --font_body: 400 13px 'PT Sans', sans-serif;
+    --font_h1: 500 2.5em 'Raleway', sans-serif;
+    --font_h2: 500 2em 'Raleway', sans-serif;
+    --font_h3: 500 1.7em 'Raleway', sans-serif;
+    --font_h4: 500 1.5em 'Raleway', sans-serif;
+    --font_h5: 500 1.3em 'Raleway', sans-serif;
+    --font_h6: 400 1.1em 'Raleway', sans-serif;
+    --font_p: 400 1.1em 'PT Sans', sans-serif;
+    --font_a: 400 1.1em 'PT Sans', sans-serif;
+    --font_nava: 400 1.1em 'Ubuntu', sans-serif;
+
+    --bg: #efede0; /* offWhite */
+    --highlight: #11a587; /* green */
+    --highlight2:  #df6244; /* red */
+    --darkHighlight: #0d715b; /* darkGreen */
+    --txtColor: #444444; /* pencilBlack */
+    --txtInvertColor: #ffffff; /* white */
+}
+
+
+body{font: var(--font_body); color: var(--txtColor); background: var(--bg);}
+h1{font: var(--font_h1); text-transform: uppercase; margin: 0.35em 0;}
+h2{font: var(--font_h2); text-transform: capitalize; margin: 0.50em 0;}
+h3{font: var(--font_h3); margin: 0.75em 0;}
+h4{font: var(--font_h4); margin: 0.75em 0;}
+h5{font: var(--font_h5); margin: 0.75em 0;}
+h6{font: var(--font_h6); margin: 0.75em 0;}
+p{font: var(--font_p); margin: 0.75em 0;}
+a{font: var(--font_a); color: var(--highlight); text-decoration: none;}
+a:hover{color: var(--darkHighlight);}
+ul, li, ol{list-style: none; margin: 0; padding: 0;}
+li{margin: 0.75em 0;}
+nav a{font: var(--font_nava); color: var(--highlight);}
+nav a:active, nav a:hover{font: var(--font_nava); color: (--highlight2);}
+img{width: 100%;}
+
+
+
+.invertColor{color: var(--txtInvertColor) !important;}
+.pageHeader{background: var(--highlight);}
+.btn.primary{background: var(--highlight); color: var(--txtInvertColor);}
+.btn.secondary{background: var(--highlight2); color: var(--txtInvertColor);}
+.eventListItem img{border: 1px solid #DEDEDE;}
+.eventListItem{-webkit-box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.06);
+box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.06); margin: 1em 0; padding: 0.5em;}
+.eventListItem:hover{-webkit-box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.15);
+box-shadow: 3px 3px 50px 0px rgba(0,0,0,0.15); margin: 1em 0; padding: 0.5em;}
+
+/* change this to change social icon possible and hover color i.e. 'var(--txtColor)','var(--highlight)'*/
+.socialIcon{color: var(--highlight);}
+.socialIcon:hover{color: var(--highlight2);}

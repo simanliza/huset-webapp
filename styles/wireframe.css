@@ -1,0 +1,10 @@
+*{box-sizing: border-box; margin: 0;}
+
+
+.pageHeader{height: 60px;}
+.pageHeader .content{display: flex; flex-wrap: nowrap;}
+.pageHeader .navBurger{font-size: 2em; line-height: 40px; padding: 10px;}
+.pageHeader .logo img{max-width: 100px;}
+
+.eventList{display: flex; flex-wrap: wrap;}
+.eventList .eventListItem{width: 32.5%; margin: 0.4%; padding: 1.5em;}

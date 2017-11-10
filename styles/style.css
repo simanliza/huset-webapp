@@ -1,0 +1,30 @@
+.centeredBody{max-width: 1100px; margin: 0 auto;}
+.center{text-align: center; margin-left: auto; margin-right: auto;}
+.align-justify{text-align: justify;}
+.underline{text-decoration: underline;}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.btn-sm{
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    border-radius: .2rem;
+}
+.loadMoreEventOption{
+    padding: 2em;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
