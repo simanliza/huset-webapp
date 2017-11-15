@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Huset Webapp</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/826a7e3dce.css" media="all">
+
+        <link rel="stylesheet" href="styles/styletile.css"/>
+        <link rel="stylesheet" href="styles/wireframe.css"/>
+        <link rel="stylesheet" href="styles/style.css"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="194x194" href="images/favicon-194x194.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/manifest.json">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body class="homePage">
+
+        <header class="pageHeader">
+            <div class="centeredBody">
+                <div class="content">
+                    <div class="navBurger">
+                        <a onclick="openNav()"><span class="invertColor">&#9776;</span></a>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Logo"/></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="pageContent">
+
+            <section class="pageNavigation">
+                <div class="closePageNavigation align-right">
+                    <span class="cursor-pointer invertColor" href="#" onclick="closeNav()">&times;</span>
+                </div>
+                <div class="navBox">
+                    <div class="favNav">
+                        <nav>
+                            <a class="invertColor bold" data-cat="favorite-categories" onclick="getEventsByDefault()">Favorite Events</a>
+                        </nav>
+                    </div>
+
+                    <div class="catNav">
+                        <nav>
+                            <a class="invertColor bold" data-cat="all-categories" onclick="getEventsAll()">All Events</a>
+                        </nav>
+                    </div>
+
+                    <div class="pagNav">
+                        <nav>
+                            <a href="about.html" class="invertColor bold" data-cat="page">About</a>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pageDetails Section">
+
+            </section>
+
+        </main>
+
+        <footer class="pageFooter">
+            <h5 class="center">&copy; Student of Kea. All right reserves.</h5>
+        </footer>
+
+        <template id="navLinkTemplate">
+            <a href="#" data-cat="category-slug" onclick="getEventsByCategory('category-slug')">Category Name</a>
+        </template>
+
+        <template id="pageDetailsTemplate">
+            <article class="pageDetailsItem">
+                <header class="pageTitle">
+                    <h2 class="center uppercase dTitle">Page Title</h2>
+                </header>
+                <div class="content">
+                    <div class="pageInfo">
+                        <p class="align-justify dContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    </div>
+                </div>
+            </article>
+        </template>
+
+        <script src="scripts/script.js"></script>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/loader.js"></script>
+
+        <script src="https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js"></script>
+
+    </body>
+</html>

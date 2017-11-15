@@ -7,3 +7,9 @@ function openNav() {
 function closeNav() {
     document.querySelector(".pageNavigation").style.width = "0px";
 }
+/* on click on nav item > close the nav */
+function closeOnSelectNavItem(){
+    document.querySelectorAll("nav a").forEach(function(item){
+        item.addEventListener("click",closeNav);
+    });
+}

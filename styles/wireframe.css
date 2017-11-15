@@ -10,9 +10,22 @@
 .pageHeader .navBurger{font-size: 1.7em; line-height: 40px; padding: 10px;}
 .pageHeader .logo img{max-width: 100px;}
 
-.eventList{display: flex; flex-wrap: wrap;}
-.homePage .eventList .dDescription{max-height: 24.75em; overflow: hidden;}
+.eventList{display: flex; flex-wrap: wrap; padding: 1%;}
+.eventList .eventListItem{border: 1px solid #999999; border-radius: 20px;}
+.eventList .eventHeader{padding: 0em 0.8em;}
+.eventList .dTitle{margin-bottom: 0.2em;}
+.eventList .dDescription>p{display: none;}
+.eventList .dDescription>p:nth-child(2){display: block;}
+.eventList .dImage{margin: 1em 0em;}
 .eventList .dCategories{font-style: italic;}
+.eventList .eventInfo{display: flex; flex-wrap: nowrap;}
+.eventList .eventInfo>div:first-child{width: 48%; margin: 1%;}
+.eventList .eventInfo>div:last-child{width: 48%; margin: 1%;}
+.eventList .eventBooking{display: flex; flex-wrap: nowrap;}
+.eventList .eventBooking p{align-content: space-between; width: 48%;}
+.eventList .eventBooking p:last-child{text-align: right;}
+.eventList .readMoreOption{border-top: 1px solid #999999;}
+
 .eventDetails{padding: 2%;}
 .eventDetails article{padding: 2%;}
 
@@ -24,9 +37,11 @@ nav{padding: 1em;}
 nav a{display: block; padding: 0.25em; border-bottom: 1px solid #505050;}
 
 
-@media screen and (max-width: 764px){
+.eventList .dDescription img{display: none;}
+.eventList .eventListItem{width: 99%; margin: 0.4%; padding: 1.5em;}
+@media screen and (min-width: 1000px){
     .eventList .eventListItem{width: 48%; margin: 0.4%; padding: 1.5em;}
 }
-@media screen and (min-width: 765px){
-    .eventList .eventListItem{width: 32.5%; margin: 0.4%; padding: 1.5em;}
-}
+
+
+.pageDetailsItem{padding: 2em;}
