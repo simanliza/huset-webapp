@@ -21,6 +21,10 @@
         <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+        <meta name="copyright" content="Huset House of Cultural and Local Events">
+        <meta name="description" content="Huset KBH is the oldest and largest cultural and local event organizer of Copenhagen, Denmark. Find and explore all interesting cultural function here.">
+        <meta name="keywords" content="Cultural Center, Cultural Events, Local Events, Local Events Today, Local Events App">
+        <meta name="author" content="Huset KBH! The house of Denmark based cultural events.">
     </head>
     <body class="homePage">
 
@@ -58,7 +62,8 @@
 
                     <div class="pagNav">
                         <nav>
-                            <a href="about.html" class="invertColor bold" data-cat="page" onclick="loadThisPage()">About</a>
+                            <a href="about.html" class="invertColor bold" data-cat="page">About</a>
+                            <a href="logout.html" class="invertColor bold" data-cat="page">Log Out</a>
                         </nav>
                     </div>
                 </div>
@@ -71,6 +76,10 @@
                 </header>
 
                 <section class="eventList centeredBody"></section>
+
+                <div class="loadMoreOption">
+                    <button class="btn" onclick="loadThisPage()">Load More</button>
+                </div>
 
             </section>
 

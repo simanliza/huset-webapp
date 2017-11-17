@@ -26,6 +26,8 @@
 .eventList .eventBooking p:last-child{text-align: right;}
 .eventList .readMoreOption{border-top: 1px solid #999999;}
 
+.listSection .loadMoreOption{text-align: center; padding: 2em; border-top: 1px solid #999999;}
+
 .eventDetails{padding: 2%;}
 .eventDetails article{padding: 2%;}
 
